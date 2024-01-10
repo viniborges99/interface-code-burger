@@ -23,16 +23,26 @@
         "prettier/prettier": [
             "error",
             {
+                "printWidth": 80,
+                "tabWidth": 2,
+                "singleQuote": true,
+                "trailingComma": "none",
+                "arrowParens": "always",
+                "semi": false,
                 "endOfLine": "auto"
             }
         ],
+        "react/react-in-jsx-scope": "off",
+        "react/prop-types": "off",
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
+        "no-unused-vars": "warn",
         "import-helpers/order-imports": [
             "warn",
-            { // example configuration
+            {
                 "newlinesBetween": "always",
                 "groups": [
+                    "/^react/",
                     "module",
                     "/^@shared/",
                     [
